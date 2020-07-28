@@ -1,7 +1,10 @@
 /// <reference types="cypress" />
 
 describe("First state test", () => {
-  it("Firts Test", () => {
+  beforeEach("Open Application", () => {
+    cy.openMainPage();
+  });
+  it(" Choose a Parking Lot Dropdown Test", () => {
     cy.openMainPage();
 
     cy.get("form")
@@ -27,5 +30,9 @@ describe("First state test", () => {
           .should("contain", "Long-Term Surface Parking")
           .wait(1000);
       });
+  });
+
+  it.only("Please input calendar, time and  radio boton test", () => {
+    cy.get("form");
   });
 });
