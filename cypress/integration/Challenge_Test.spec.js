@@ -6,12 +6,17 @@ describe("First state test", () => {
 
     cy.get("form")
       .find("tbody")
-      .then(tablerow => {
-        cy.wrap(tablerow)
+      .then(dropdown => {
+        cy.wrap(dropdown)
           .find("tr")
           .first()
-          .get("select")
-          .select("Short-Term Parking");
+          .get("select option")
+          .each(listitems => {
+            const itemsText = listitems.text().trim();
+          });
+        //   .select("Short-Term Parking")
+        //   .wait(1000)
+        //   .select("Economy Parking");
       });
   });
 });
