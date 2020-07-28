@@ -1,5 +1,6 @@
 {
+  "baseUrl": "http://www.shino.de/parkcalc/",
   "ignoreTestFiles": "**/examples/*",
-  "viewportHeight": 1080,
-  "viewportWidth": 1920
+  "viewportWidth": 1000,
+  "viewportHeight": 660
 }
