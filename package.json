@@ -1,0 +1,19 @@
+{
+  "name": "acklen",
+  "version": "1.0.0",
+  "description": "This is a Challenge program for acklenavenue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hedmon84/Automation-Engineer-Challenge.git"
+  },
+  "author": "Hedmon_Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hedmon84/Automation-Engineer-Challenge/issues"
+  },
+  "homepage": "https://github.com/hedmon84/Automation-Engineer-Challenge#readme"
+}
