@@ -77,8 +77,28 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
     ).check({ force: true });
     cy.get("#LeavingDate")
       .clear()
-      .type("9/30/2020")
+      .type("8/30/2020")
       .invoke("prop", "value")
-      .should("contain", "9/30/2020");
+      .should("contain", "8/30/2020");
+    cy.get("#LeavingTime")
+      .clear()
+      .type("2:00")
+      .invoke("prop", "value")
+      .should("contain", "2:00");
+
+    cy.get(
+      "body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > a > img"
+    )
+      .click()
+      .should("have.attr", "href");
+
+    cy.get(
+      "body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=radio]:nth-child(4)"
+    ).check({ force: true });
+    cy.get(
+      "body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=radio]:nth-child(5)"
+    ).check({ force: true });
+
+    cy.get("form").submit();
   });
 });
