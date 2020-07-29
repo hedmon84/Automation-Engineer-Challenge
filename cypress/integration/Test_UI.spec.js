@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("First tests is only to check if calendar , dropdowns, radiobutton works", () => {
+describe("Tests is only to check if calendar , dropdowns, radiobutton works", () => {
   beforeEach("Open Application", () => {
     cy.openMainPage();
   });
@@ -32,7 +32,7 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
       });
   });
 
-  it.only("Please input calendar, time and  radio boton test", () => {
+  it("Please input calendar, time and  radio boton test", () => {
     cy.get("form")
       .find("tbody")
       .then(table => {
