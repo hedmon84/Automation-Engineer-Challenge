@@ -4,7 +4,7 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
   beforeEach("Open Application", () => {
     cy.openMainPage();
   });
-  it.only(" Choose a Parking Lot Dropdown Test", () => {
+  it(" Choose a Parking Lot Dropdown Test", () => {
     cy.openMainPage();
 
     cy.get("form")
@@ -32,7 +32,7 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
       });
   });
 
-  it("Please input calendar, time and  radio boton test", () => {
+  it.only("Please input calendar, time and  radio boton test", () => {
     cy.get("form")
       .find("tbody")
       .then(table => {
@@ -51,10 +51,10 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
           });
       });
 
-    // cy.get("form")
-    //   .find("tbody")
-    //   .then(table => {
-    //     cy.wrap(table).find("tr").eq(1).get("a").click({ multiple: true });
-    //   });
+    cy.get("form")
+      .find("tbody")
+      .then(table => {
+        cy.wrap(table).find("tr").eq(1).contains("a",);
+      });
   });
 });
