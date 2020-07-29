@@ -87,7 +87,7 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
       .should("contain", "2:00");
 
     cy.get(
-      "body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > a > img"
+      "body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > a"
     )
       .click()
       .should("have.attr", "href");
@@ -100,5 +100,11 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
     ).check({ force: true });
 
     cy.get("form").submit();
+    cy.get(
+      "body > form > table > tbody > tr:nth-child(4) > td:nth-child(2) > span.SubHead > b"
+    ).then(price => {
+      const value = price.text();
+      expect(value).to.equal("$ 12.00");
+    });
   });
 });
