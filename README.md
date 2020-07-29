@@ -26,3 +26,6 @@ screenshot= will create screenshot of an error occurred
  
 
 
+#Comments:
+-Cypres is unable to build/deployment I try with  heroku but is not a clear info how to do it.
+-automated things a use , prettier,eslint,githubautocommit,mocha,mochaawesomereports
