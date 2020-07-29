@@ -1,11 +1,10 @@
 export class startingTime {
-    pickDate(Date) {
-      cy.get("#StartingDate")
-        .clear()
-        .type(Date)
-        .invoke("prop", "value")
-        .should("contain", Date);
-    }
+  pickTime(Time) {
+    cy.get("#StartingTime")
+      .clear()
+      .type(Time)
+      .invoke("prop", "value")
+      .should("contain", Time);
   }
-  export const OnStartingTime = new startingTime();
-  
+}
+export const OnStartingTime = new startingTime();
