@@ -4,7 +4,7 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
   beforeEach("Open Application", () => {
     cy.openMainPage();
   });
-  it(" Choose a Parking Lot Dropdown Test", () => {
+  it.only(" Choose a Parking Lot Dropdown Test", () => {
     cy.openMainPage();
 
     cy.get("form")
@@ -32,7 +32,7 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
       });
   });
 
-  it.only("Please input calendar, time and  radio boton test", () => {
+  it("Please input calendar, time and  radio boton test", () => {
     cy.get("form")
       .find("tbody")
       .then(table => {
@@ -41,19 +41,20 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
           .eq(1)
           .get("[name=StartingDate]")
           .then(date => {
-            const datestring = date.text();
             cy.wrap(date)
               .clear()
-              .type("7/30/2020")
+              .type("8/30/2020")
               .invoke("prop", "value")
               .then(classValue => {
-                expect(classValue).to.equal("7/30/2020");
+                expect(classValue).to.equal("8/30/2020");
               });
           });
-
-        // .clear()
-        // .type("7/30/2020")
-        // .should("contain", "7/30/2020");
       });
+
+    // cy.get("form")
+    //   .find("tbody")
+    //   .then(table => {
+    //     cy.wrap(table).find("tr").eq(1).get("a").click({ multiple: true });
+    //   });
   });
 });
