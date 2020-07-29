@@ -1,36 +1,38 @@
 <?xml version="1.0"?>
 <testsuites>
-<testsuite name="Root Suite" timestamp="2020-07-29T16:59:51" tests="0" file="cypress/integration/Test_UI.spec.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Tests is only to check if calendar , dropdowns, radiobutton works" timestamp="2020-07-29T16:59:51" tests="2" time="10.7560" failures="0">
+<testsuite name="Root Suite" timestamp="2020-07-29T18:32:17" tests="0" file="cypress/integration/Test_UI.spec.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Tests is only to check if calendar , dropdowns, radiobutton works" timestamp="2020-07-29T18:32:17" tests="2" time="13.4210" failures="0">
   
-  <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works  Choose a Parking Lot Dropdown Test" time="8.0780" classname=" Choose a Parking Lot Dropdown Test"></testcase>
+  <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works  Choose a Parking Lot Dropdown Test" time="9.0590" classname=" Choose a Parking Lot Dropdown Test"></testcase>
   
-  <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works Please input calendar, time and  radio boton test" time="2.6780" classname="Please input calendar, time and  radio boton test"></testcase>
+  <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works Please input calendar, time and  radio boton test" time="4.3620" classname="Please input calendar, time and  radio boton test"></testcase>
   
 </testsuite>
 
-<testsuite name="Root Suite" timestamp="2020-07-29T17:00:09" tests="0" file="cypress/integration/TestWithObjects.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Friendly_User_Test" timestamp="2020-07-29T17:00:09" tests="10" time="3.7750" failures="0">
+<testsuite name="Root Suite" timestamp="2020-07-29T18:32:43" tests="0" file="cypress/integration/TestWithObjects.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Friendly_User_Test" timestamp="2020-07-29T18:32:43" tests="11" time="4.6980" failures="0">
   
-  <testcase name="Friendly_User_Test Open Application" time="1.0150" classname="Open Application"></testcase>
+  <testcase name="Friendly_User_Test Open Application" time="1.3720" classname="Open Application"></testcase>
   
-  <testcase name="Friendly_User_Test Parking Lot Test" time="0.2670" classname="Parking Lot Test"></testcase>
+  <testcase name="Friendly_User_Test Parking Lot Test" time="0.2830" classname="Parking Lot Test"></testcase>
   
-  <testcase name="Friendly_User_Test Starting Date Test" time="0.4520" classname="Starting Date Test"></testcase>
+  <testcase name="Friendly_User_Test Starting Date Test" time="0.5610" classname="Starting Date Test"></testcase>
   
-  <testcase name="Friendly_User_Test Starting Time Test" time="0.3590" classname="Starting Time Test"></testcase>
+  <testcase name="Friendly_User_Test Starting Time Test" time="0.4110" classname="Starting Time Test"></testcase>
   
-  <testcase name="Friendly_User_Test Starting Time AM or PM Test" time="0.1060" classname="Starting Time AM or PM Test"></testcase>
+  <testcase name="Friendly_User_Test Starting Time AM or PM Test" time="0.1810" classname="Starting Time AM or PM Test"></testcase>
   
-  <testcase name="Friendly_User_Test Leaving Date Test" time="0.4040" classname="Leaving Date Test"></testcase>
+  <testcase name="Friendly_User_Test Leaving Date Test" time="0.5040" classname="Leaving Date Test"></testcase>
   
-  <testcase name="Friendly_User_Test Leaving Time Test" time="0.3930" classname="Leaving Time Test"></testcase>
+  <testcase name="Friendly_User_Test Leaving Time Test" time="0.3680" classname="Leaving Time Test"></testcase>
   
-  <testcase name="Friendly_User_Test Leaving Time AM or PM Test" time="0.1120" classname="Leaving Time AM or PM Test"></testcase>
+  <testcase name="Friendly_User_Test Leaving Time AM or PM Test" time="0.1460" classname="Leaving Time AM or PM Test"></testcase>
   
-  <testcase name="Friendly_User_Test Format Submit Test" time="0.6040" classname="Format Submit Test"></testcase>
+  <testcase name="Friendly_User_Test Format Submit Test" time="0.7200" classname="Format Submit Test"></testcase>
   
-  <testcase name="Friendly_User_Test Check Error Message Test" time="0.0630" classname="Check Error Message Test"></testcase>
+  <testcase name="Friendly_User_Test Check Correct Price Test" time="0.0960" classname="Check Correct Price Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Check Correct Date Test" time="0.0560" classname="Check Correct Date Test"></testcase>
   
 </testsuite>
 

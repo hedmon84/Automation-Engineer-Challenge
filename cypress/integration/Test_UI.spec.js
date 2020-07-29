@@ -60,7 +60,7 @@ describe("Tests is only to check if calendar , dropdowns, radiobutton works", ()
           .get(
             "body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > a"
           )
-          .click()
+          // .click()
           .should("have.attr", "href");
       });
 
@@ -89,7 +89,7 @@ describe("Tests is only to check if calendar , dropdowns, radiobutton works", ()
     cy.get(
       "body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > a"
     )
-      .click()
+      // .click()
       .should("have.attr", "href");
 
     cy.get(

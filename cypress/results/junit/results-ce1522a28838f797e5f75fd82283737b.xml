@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.6980" tests="11" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-07-29T18:32:43" tests="0" file="cypress/integration/TestWithObjects.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Friendly_User_Test" timestamp="2020-07-29T18:32:43" tests="11" time="4.6980" failures="0">
+    <testcase name="Friendly_User_Test Open Application" time="1.3720" classname="Open Application">
+    </testcase>
+    <testcase name="Friendly_User_Test Parking Lot Test" time="0.2830" classname="Parking Lot Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Starting Date Test" time="0.5610" classname="Starting Date Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Starting Time Test" time="0.4110" classname="Starting Time Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Starting Time AM or PM Test" time="0.1810" classname="Starting Time AM or PM Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Leaving Date Test" time="0.5040" classname="Leaving Date Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Leaving Time Test" time="0.3680" classname="Leaving Time Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Leaving Time AM or PM Test" time="0.1460" classname="Leaving Time AM or PM Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Format Submit Test" time="0.7200" classname="Format Submit Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Check Correct Price Test" time="0.0960" classname="Check Correct Price Test">
+    </testcase>
+    <testcase name="Friendly_User_Test Check Correct Date Test" time="0.0560" classname="Check Correct Date Test">
+    </testcase>
+  </testsuite>
+</testsuites>

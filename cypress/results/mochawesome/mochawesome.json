@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-07-29T16:59:51.367Z",
-    "end": "2020-07-29T17:00:02.203Z",
-    "duration": 10836,
+    "start": "2020-07-29T18:32:17.520Z",
+    "end": "2020-07-29T18:32:32.370Z",
+    "duration": 14850,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d10b29c3-4283-4537-9c36-8ad1433aa56b",
+      "uuid": "a5a65905-3ac3-4fc8-a1a0-8ac1c86fbb58",
       "title": "",
       "fullFile": "cypress/integration/Test_UI.spec.js",
       "file": "cypress/integration/Test_UI.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5d97b6de-9dbe-40bd-8e4e-9a3b3effba90",
+          "uuid": "6d95121f-ae0b-4b76-b486-648094e37a13",
           "title": "Tests is only to check if calendar , dropdowns, radiobutton works",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": " Choose a Parking Lot Dropdown Test",
               "fullTitle": "Tests is only to check if calendar , dropdowns, radiobutton works  Choose a Parking Lot Dropdown Test",
               "timedOut": null,
-              "duration": 8078,
+              "duration": 9059,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.openMainPage();\ncy.get(\"form\").find(\"tbody\").then(function (table) {\n  cy.wrap(table).find(\"tr\").first().get(\"select\").select(\"Short-Term Parking\").should(\"contain\", \" Short-Term Parking\").wait(1000).select(\"Economy Parking\").should(\"contain\", \"Economy Parking\").wait(1000).select(\"Valet Parking\").should(\"contain\", \"Valet Parking\").wait(1000).select(\"Long-Term Garage Parking\").should(\"contain\", \"Long-Term Garage Parking\").wait(1000).select(\"Long-Term Surface Parking\").should(\"contain\", \"Long-Term Surface Parking\").wait(1000);\n});",
               "err": {},
-              "uuid": "7b3650c0-79cb-4b81-9ebd-17358ec04bbd",
-              "parentUUID": "5d97b6de-9dbe-40bd-8e4e-9a3b3effba90",
+              "uuid": "2d378ef0-b0bb-4602-ad21-bd803d6d9de5",
+              "parentUUID": "6d95121f-ae0b-4b76-b486-648094e37a13",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Please input calendar, time and  radio boton test",
               "fullTitle": "Tests is only to check if calendar , dropdowns, radiobutton works Please input calendar, time and  radio boton test",
               "timedOut": null,
-              "duration": 2678,
+              "duration": 4362,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get(\"form\").find(\"tbody\").then(function (table) {\n  cy.wrap(table).find(\"tr\").eq(1).get(\"[name=StartingDate]\").then(function (date) {\n    cy.wrap(date).clear().type(\"8/30/2020\").invoke(\"prop\", \"value\").then(function (Value) {\n      expect(Value).to.equal(\"8/30/2020\");\n    });\n  });\n});\ncy.get(\"form\").find(\"tbody\").then(function (table) {\n  cy.wrap(table).find(\"tr\").eq(1).get(\"body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > a\") // .click()\n  .should(\"have.attr\", \"href\");\n});\ncy.get(\"#StartingTime\").clear().type(\"1:00\").invoke(\"prop\", \"value\").should(\"contain\", \"1:00\");\ncy.get(\"body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > input[type=radio]:nth-child(4)\").check({\n  force: true\n});\ncy.get(\"body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > input[type=radio]:nth-child(5)\").check({\n  force: true\n});\ncy.get(\"#LeavingDate\").clear().type(\"8/30/2020\").invoke(\"prop\", \"value\").should(\"contain\", \"8/30/2020\");\ncy.get(\"#LeavingTime\").clear().type(\"2:00\").invoke(\"prop\", \"value\").should(\"contain\", \"2:00\");\ncy.get(\"body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > a\") // .click()\n.should(\"have.attr\", \"href\");\ncy.get(\"body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=radio]:nth-child(4)\").check({\n  force: true\n});\ncy.get(\"body > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=radio]:nth-child(5)\").check({\n  force: true\n});\ncy.get(\"form\").submit();\ncy.get(\"body > form > table > tbody > tr:nth-child(4) > td:nth-child(2) > span.SubHead > b\").then(function (price) {\n  var value = price.text();\n  expect(value).to.equal(\"$ 12.00\");\n});\ncy.get(\"body > form > table > tbody > tr:nth-child(4) > td:nth-child(2) > span.BodyCopy > b\").then(function (date) {\n  var day = date.text().trim();\n  expect(day).to.equal(\"(0 Days, 1 Hours, 0 Minutes)\");\n});",
               "err": {},
-              "uuid": "9397e067-b4b6-4c1f-98d2-09d2952083c2",
-              "parentUUID": "5d97b6de-9dbe-40bd-8e4e-9a3b3effba90",
+              "uuid": "f39312de-eaa8-4511-ae72-4059ae87e44d",
+              "parentUUID": "6d95121f-ae0b-4b76-b486-648094e37a13",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7b3650c0-79cb-4b81-9ebd-17358ec04bbd",
-            "9397e067-b4b6-4c1f-98d2-09d2952083c2"
+            "2d378ef0-b0bb-4602-ad21-bd803d6d9de5",
+            "f39312de-eaa8-4511-ae72-4059ae87e44d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10756,
+          "duration": 13421,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
