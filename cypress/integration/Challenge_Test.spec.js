@@ -106,5 +106,12 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
       const value = price.text();
       expect(value).to.equal("$ 12.00");
     });
+
+    cy.get(
+      "body > form > table > tbody > tr:nth-child(4) > td:nth-child(2) > span.BodyCopy > b"
+    ).then(date => {
+      const day = date.text().trim();
+      expect(day).to.equal("(0 Days, 1 Hours, 0 Minutes)");
+    });
   });
 });
