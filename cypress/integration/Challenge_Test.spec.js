@@ -45,10 +45,9 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
             cy.wrap(date)
               .clear()
               .type("7/30/2020")
-              .invoke("attr", "value")
+              .invoke("prop", "value")
               .then(classValue => {
-                expect(classValue).not.equal("7/30/2020");
-                cy.wrap(date);
+                expect(classValue).to.equal("7/30/2020");
               });
           });
 
