@@ -29,10 +29,10 @@ describe("Friendly_User_Test", () => {
     OnStartingTimeAMPM.pickPeriod("PM");
   });
   it("Leaving Date Test", () => {
-    OnLeavingDate.leaveDate("7/8/2020");
+    OnLeavingDate.leaveDate("7/29/2020");
   });
   it("Leaving Time Test", () => {
-    OnLeavingTime.leaveTime("12:00");
+    OnLeavingTime.leaveTime("1:00");
   });
   it("Leaving Time AM or PM Test", () => {
     OnLeavingTimeAMPM.pickPeriod("PM");
@@ -40,23 +40,27 @@ describe("Friendly_User_Test", () => {
   it("Format Submit Test", () => {
     FormSubmit.Submit();
   });
-  // it("Check Correct Price Test", () => {
-  //   oncheckPrice.ShouldBe("$ 2.00");
-  // });
-  // it("Check Correct Date Test", () => {
-  //   OncheckDate.CheckDate("(0 Days, 1 Hours, 0 Minutes)");
-  // });
-
-  it("Check Error Message Test", () => {
-    //* Error Type
-    //ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time {
-      // 
-    //}
-  
-    //ERROR! Enter A Correctly Formatted Date
-
-    OnerrMessage.CheckErrMessage(
-      "ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time"
-    );
+  it("Check Correct Price Test", () => {
+    oncheckPrice.ShouldBe("$ 2.00");
   });
+  it("Check Correct Date Test", () => {
+    OncheckDate.CheckDate("(0 Days, 1 Hours, 0 Minutes)");
+  });
+
+  // it("Check Error Message Test", () => {
+  //   /* Error Type
+  //   ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time {
+  //     add initial date (7/29/2020) and leavingDate(7/8/2020) to check out this error
+  //   }
+
+  // */
+  //   /*ERROR! Enter A Correctly Formatted Date {
+  //     for this error type the incorrect date format
+  //   }
+  //   */
+
+  //   OnerrMessage.CheckErrMessage(
+  //     "ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time"
+  //   );
+  // });
 });

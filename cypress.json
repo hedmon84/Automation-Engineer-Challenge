@@ -3,7 +3,7 @@
   "ignoreTestFiles": "**/examples/*",
   "viewportWidth": 1000,
   "viewportHeight": 660,
-  "video": false,
+  "video": true,
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
     "configFile": "reporter-config.json"
