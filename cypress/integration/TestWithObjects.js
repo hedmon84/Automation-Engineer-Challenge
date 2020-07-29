@@ -8,21 +8,40 @@ import { OnLeavingTimeAMPM } from "../support/page_objects/LeavingTimeAMPM";
 import { FormSubmit } from "../support/page_objects/submitForm";
 import { oncheckPrice } from "../support/page_objects/checkPrice";
 import { OncheckDate } from "../support/page_objects/checkDate";
-describe("Test User_Friendly", () => {
-  beforeEach("Open Application", () => {
+describe("Friendly_User_Test", () => {
+  it("Open Application", () => {
     cy.openMainPage();
   });
 
-  it("Friendly_User_Test", () => {
+  it("Parking Lot Test", () => {
     onParkingLotPicker.pickLot("Short-Term Parking");
+  });
+
+  it("Starting Date Test", () => {
     onStartingDate.pickDate("7/28/2020");
+  });
+  it("Starting Time Test", () => {
     OnStartingTime.pickTime("12:00");
+  });
+  it("Starting Time AM or PM Test", () => {
     OnStartingTimeAMPM.pickPeriod("PM");
+  });
+  it("Leaving Date Test", () => {
     OnLeavingDate.leaveDate("7/28/2020");
+  });
+  it("Leaving Time Test", () => {
     OnLeavingTime.leaveTime("1:00");
+  });
+  it("Leaving Time AM or PM Test", () => {
     OnLeavingTimeAMPM.pickPeriod("PM");
+  });
+  it("Format Submit Test", () => {
     FormSubmit.Submit();
+  });
+  it("Check Correct Price Test", () => {
     oncheckPrice.ShouldBe("$ 2.00");
+  });
+  it("Check Correct Date Test", () => {
     OncheckDate.CheckDate("(0 Days, 1 Hours, 0 Minutes)");
   });
 });
