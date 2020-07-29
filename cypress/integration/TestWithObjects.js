@@ -5,6 +5,8 @@ import { OnStartingTimeAMPM } from "../support/page_objects/startingTimeAMPM";
 import { OnLeavingDate } from "../support/page_objects/LeavingDate";
 import { OnLeavingTime } from "../support/page_objects/LeavingTime";
 import { OnLeavingTimeAMPM } from "../support/page_objects/LeavingTimeAMPM";
+import { FormSubmit } from "../support/page_objects/submitForm";
+import { oncheckPrice } from "../support/page_objects/checkPrice";
 describe("Test User_Friendly", () => {
   beforeEach("Open Application", () => {
     cy.openMainPage();
@@ -18,5 +20,7 @@ describe("Test User_Friendly", () => {
     OnLeavingDate.leaveDate("7/28/2020");
     OnLeavingTime.leaveTime("1:00");
     OnLeavingTimeAMPM.pickPeriod("PM");
+    FormSubmit.Submit();
+    oncheckPrice.ShouldBe("$ 2.00");
   });
 });
