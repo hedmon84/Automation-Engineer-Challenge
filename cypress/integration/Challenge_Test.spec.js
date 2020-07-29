@@ -36,7 +36,25 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
     cy.get("form")
       .find("tbody")
       .then(table => {
-        cy.wrap(table).find("tr").eq(1).get("#StartingDate").clear();
+        cy.wrap(table)
+          .find("tr")
+          .eq(1)
+          .get("[name=StartingDate]")
+          .then(date => {
+            const datestring = date.text();
+            cy.wrap(date)
+              .clear()
+              .type("7/30/2020")
+              .invoke("attr", "value")
+              .then(classValue => {
+                expect(classValue).not.equal("7/30/2020");
+                cy.wrap(date);
+              });
+          });
+
+        // .clear()
+        // .type("7/30/2020")
+        // .should("contain", "7/30/2020");
       });
   });
 });
