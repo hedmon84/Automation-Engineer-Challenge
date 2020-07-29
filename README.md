@@ -2,7 +2,7 @@
 This project is a challenge for AclkenAvenue
 
 **Available Scripts**
-In the project directory, you can run:
+>In the project directory, you can run:
 
 **npm start**
 Runs the cypress app UI 
