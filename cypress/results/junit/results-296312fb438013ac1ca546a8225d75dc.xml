@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="12.6430" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-07-29T14:07:11" tests="0" file="cypress/integration/Test_UI.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Tests is only to check if calendar , dropdowns, radiobutton works" timestamp="2020-07-29T14:07:11" tests="2" time="12.6430" failures="0">
+    <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works  Choose a Parking Lot Dropdown Test" time="9.0390" classname=" Choose a Parking Lot Dropdown Test">
+    </testcase>
+    <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works Please input calendar, time and  radio boton test" time="3.6040" classname="Please input calendar, time and  radio boton test">
+    </testcase>
+  </testsuite>
+</testsuites>
