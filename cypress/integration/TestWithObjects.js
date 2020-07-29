@@ -8,6 +8,8 @@ import { OnLeavingTimeAMPM } from "../support/page_objects/LeavingTimeAMPM";
 import { FormSubmit } from "../support/page_objects/submitForm";
 import { oncheckPrice } from "../support/page_objects/checkPrice";
 import { OncheckDate } from "../support/page_objects/checkDate";
+import { OnerrMessage } from "../support/page_objects/CheckErrorMessage";
+
 describe("Friendly_User_Test", () => {
   it("Open Application", () => {
     cy.openMainPage();
@@ -18,7 +20,7 @@ describe("Friendly_User_Test", () => {
   });
 
   it("Starting Date Test", () => {
-    onStartingDate.pickDate("7/29/2020");
+    onStartingDate.pickDate("MM/DD/YYYY");
   });
   it("Starting Time Test", () => {
     OnStartingTime.pickTime("12:00");
@@ -38,10 +40,14 @@ describe("Friendly_User_Test", () => {
   it("Format Submit Test", () => {
     FormSubmit.Submit();
   });
-  it("Check Correct Price Test", () => {
-    oncheckPrice.ShouldBe("$ 2.00");
-  });
-  it("Check Correct Date Test", () => {
-    OncheckDate.CheckDate("(0 Days, 1 Hours, 0 Minutes)");
+  // it("Check Correct Price Test", () => {
+  //   oncheckPrice.ShouldBe("$ 2.00");
+  // });
+  // it("Check Correct Date Test", () => {
+  //   OncheckDate.CheckDate("(0 Days, 1 Hours, 0 Minutes)");
+  // });
+
+  it("Check Error Message Test", () => {
+    OnerrMessage.CheckErrMessage("ERROR! Enter A Correctly Formatted Date");
   });
 });
