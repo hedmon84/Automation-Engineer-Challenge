@@ -45,8 +45,8 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
               .clear()
               .type("8/30/2020")
               .invoke("prop", "value")
-              .then(classValue => {
-                expect(classValue).to.equal("8/30/2020");
+              .then(Value => {
+                expect(Value).to.equal("8/30/2020");
               });
           });
       });
@@ -60,13 +60,25 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
           .get(
             "body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > a"
           )
-
           .click()
           .should("have.attr", "href");
       });
-  });
 
-  it("test", () => {
-    cy.visit("javascript:NewCal('StartingDate','mmddyyyy',false,24)");
+    cy.get("#StartingTime")
+      .clear()
+      .type("1:00")
+      .invoke("prop", "value")
+      .should("contain", "1:00");
+    cy.get(
+      "body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > input[type=radio]:nth-child(4)"
+    ).check({ force: true });
+    cy.get(
+      "body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > input[type=radio]:nth-child(5)"
+    ).check({ force: true });
+    cy.get("#LeavingDate")
+      .clear()
+      .type("9/30/2020")
+      .invoke("prop", "value")
+      .should("contain", "9/30/2020");
   });
 });
