@@ -19,9 +19,9 @@ This project is a challenge for AclkenAvenue
 
 
 **Folders to check:**
->mochawesome-report = This folder has the automatic results you can open on html
->video= will save the video if you run  npm run cypress:run
->screenshot= will create screenshot of an error occurred
+mochawesome-report = This folder has the automatic results you can open on html
+video= will save the video if you run  npm run cypress:run
+screenshot= will create screenshot of an error occurred
 
  
 
