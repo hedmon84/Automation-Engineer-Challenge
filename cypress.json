@@ -2,5 +2,9 @@
   "baseUrl": "http://www.shino.de/parkcalc/",
   "ignoreTestFiles": "**/examples/*",
   "viewportWidth": 1000,
-  "viewportHeight": 660
+  "viewportHeight": 660,
+  "video": true,
+  "env": {
+    "RETRIES":2
+  }
 }

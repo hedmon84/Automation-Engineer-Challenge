@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/hedmon84/Automation-Engineer-Challenge#readme",
   "devDependencies": {
-    "cypress": "^4.11.0"
+    "cypress": "^4.11.0",
+    "cypress-plugin-retries": "^1.5.2"
+  },
+  "dependencies": {
+    "prettier": "^2.0.5"
   }
 }

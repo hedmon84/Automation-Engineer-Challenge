@@ -18,7 +18,7 @@ describe("Friendly_User_Test", () => {
   });
 
   it("Starting Date Test", () => {
-    onStartingDate.pickDate("7/28/2020");
+    onStartingDate.pickDate("28/28/2020");
   });
   it("Starting Time Test", () => {
     OnStartingTime.pickTime("12:00");
