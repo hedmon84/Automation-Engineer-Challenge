@@ -54,7 +54,19 @@ describe("First tests is only to check if calendar , dropdowns, radiobutton work
     cy.get("form")
       .find("tbody")
       .then(table => {
-        cy.wrap(table).find("tr").eq(1).contains("a",);
+        cy.wrap(table)
+          .find("tr")
+          .eq(1)
+          .get(
+            "body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > a"
+          )
+
+          .click()
+          .should("have.attr", "href");
       });
+  });
+
+  it("test", () => {
+    cy.visit("javascript:NewCal('StartingDate','mmddyyyy',false,24)");
   });
 });
