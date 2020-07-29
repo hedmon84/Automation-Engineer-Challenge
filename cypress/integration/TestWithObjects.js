@@ -20,7 +20,7 @@ describe("Friendly_User_Test", () => {
   });
 
   it("Starting Date Test", () => {
-    onStartingDate.pickDate("MM/DD/YYYY");
+    onStartingDate.pickDate("7/29/2020");
   });
   it("Starting Time Test", () => {
     OnStartingTime.pickTime("12:00");
@@ -29,10 +29,10 @@ describe("Friendly_User_Test", () => {
     OnStartingTimeAMPM.pickPeriod("PM");
   });
   it("Leaving Date Test", () => {
-    OnLeavingDate.leaveDate("7/29/2020");
+    OnLeavingDate.leaveDate("7/8/2020");
   });
   it("Leaving Time Test", () => {
-    OnLeavingTime.leaveTime("1:00");
+    OnLeavingTime.leaveTime("12:00");
   });
   it("Leaving Time AM or PM Test", () => {
     OnLeavingTimeAMPM.pickPeriod("PM");
@@ -48,6 +48,15 @@ describe("Friendly_User_Test", () => {
   // });
 
   it("Check Error Message Test", () => {
-    OnerrMessage.CheckErrMessage("ERROR! Enter A Correctly Formatted Date");
+    //* Error Type
+    //ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time {
+      // 
+    //}
+  
+    //ERROR! Enter A Correctly Formatted Date
+
+    OnerrMessage.CheckErrMessage(
+      "ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time"
+    );
   });
 });
