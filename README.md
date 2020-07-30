@@ -1,7 +1,7 @@
 
 This project is a challenge for AclkenAvenue
 
-#Available Scripts
+# Available Scripts
 >In the project directory, you can run:
 
 **npm start**
@@ -26,6 +26,6 @@ screenshot= will create screenshot of an error occurred
  
 
 
-#Comments
+# Comments
 -Cypres is unable to build/deployment I try with  heroku but is not a clear info how to do it.
 -automated things a use , prettier,eslint,githubautocommit,mocha,mochaawesomereports
