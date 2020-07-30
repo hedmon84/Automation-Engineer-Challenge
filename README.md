@@ -8,7 +8,7 @@ This project is a challenge by Acklen Avenue
 * Runs the cypress app UI 
 
 
-* The page will pop up and you can check the 2 test  first test all the controlls of the webpage and the second is more structured a user friendly for make test.
+* The page will pop up and you can check the 2 test  first test all the controls of the webpage and the second is more structured a user friendly for make test.
 * No reports automatic available with this npm run 
 
 **npm run cypress:run**
