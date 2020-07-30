@@ -29,3 +29,4 @@ This project is a challenge by Acklen Avenue
 # Comments
 * Cypres is unable to build/deployment I try with  heroku but is not a clear info how to do it.
 * Automated things used on the program prettier,eslint,githubautocommit,mocha,mochaawesomereports
+*  cypess use mocha and chai libraries soo I use chai to make assertions 
