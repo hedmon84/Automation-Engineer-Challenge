@@ -1,5 +1,5 @@
 
-This project is a challenge for AclkenAvenue
+This project is a challenge by Acklen Avenue
 
 # Available Scripts
 * In the project directory, you can run:
