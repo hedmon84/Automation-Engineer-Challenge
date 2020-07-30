@@ -1,38 +1,38 @@
 <?xml version="1.0"?>
 <testsuites>
-<testsuite name="Root Suite" timestamp="2020-07-29T18:32:17" tests="0" file="cypress/integration/Test_UI.spec.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Tests is only to check if calendar , dropdowns, radiobutton works" timestamp="2020-07-29T18:32:17" tests="2" time="13.4210" failures="0">
+<testsuite name="Root Suite" timestamp="2020-07-30T18:37:47" tests="0" file="cypress/integration/TestWithObjects.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Friendly_User_Test" timestamp="2020-07-30T18:37:47" tests="11" time="3.7050" failures="0">
   
-  <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works  Choose a Parking Lot Dropdown Test" time="9.0590" classname=" Choose a Parking Lot Dropdown Test"></testcase>
+  <testcase name="Friendly_User_Test Open Application" time="1.0160" classname="Open Application"></testcase>
   
-  <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works Please input calendar, time and  radio boton test" time="4.3620" classname="Please input calendar, time and  radio boton test"></testcase>
+  <testcase name="Friendly_User_Test Parking Lot Test" time="0.2110" classname="Parking Lot Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Starting Date Test" time="0.4690" classname="Starting Date Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Starting Time Test" time="0.3510" classname="Starting Time Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Starting Time AM or PM Test" time="0.1020" classname="Starting Time AM or PM Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Leaving Date Test" time="0.4160" classname="Leaving Date Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Leaving Time Test" time="0.3140" classname="Leaving Time Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Leaving Time AM or PM Test" time="0.1090" classname="Leaving Time AM or PM Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Format Submit Test" time="0.5900" classname="Format Submit Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Check Correct Price Test" time="0.0970" classname="Check Correct Price Test"></testcase>
+  
+  <testcase name="Friendly_User_Test Check Correct Date Test" time="0.0300" classname="Check Correct Date Test"></testcase>
   
 </testsuite>
 
-<testsuite name="Root Suite" timestamp="2020-07-29T18:32:43" tests="0" file="cypress/integration/TestWithObjects.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Friendly_User_Test" timestamp="2020-07-29T18:32:43" tests="11" time="4.6980" failures="0">
+<testsuite name="Root Suite" timestamp="2020-07-30T18:37:29" tests="0" file="cypress/integration/Test_UI.spec.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Tests is only to check if calendar , dropdowns, radiobutton works" timestamp="2020-07-30T18:37:29" tests="2" time="11.5500" failures="0">
   
-  <testcase name="Friendly_User_Test Open Application" time="1.3720" classname="Open Application"></testcase>
+  <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works  Choose a Parking Lot Dropdown Test" time="8.0770" classname=" Choose a Parking Lot Dropdown Test"></testcase>
   
-  <testcase name="Friendly_User_Test Parking Lot Test" time="0.2830" classname="Parking Lot Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Starting Date Test" time="0.5610" classname="Starting Date Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Starting Time Test" time="0.4110" classname="Starting Time Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Starting Time AM or PM Test" time="0.1810" classname="Starting Time AM or PM Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Leaving Date Test" time="0.5040" classname="Leaving Date Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Leaving Time Test" time="0.3680" classname="Leaving Time Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Leaving Time AM or PM Test" time="0.1460" classname="Leaving Time AM or PM Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Format Submit Test" time="0.7200" classname="Format Submit Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Check Correct Price Test" time="0.0960" classname="Check Correct Price Test"></testcase>
-  
-  <testcase name="Friendly_User_Test Check Correct Date Test" time="0.0560" classname="Check Correct Date Test"></testcase>
+  <testcase name="Tests is only to check if calendar , dropdowns, radiobutton works Please input calendar, time and  radio boton test" time="3.4730" classname="Please input calendar, time and  radio boton test"></testcase>
   
 </testsuite>
 

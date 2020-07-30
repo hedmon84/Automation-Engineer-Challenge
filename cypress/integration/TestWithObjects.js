@@ -16,7 +16,17 @@ describe("Friendly_User_Test", () => {
   });
 
   it("Parking Lot Test", () => {
-    onParkingLotPicker.pickLot("Short-Term Parking");
+    /* 
+    Try this Tests  
+    
+              select             shloud_be
+    pickLot("Valet Parking", "Valet Parking");     //pass
+    pickLot("Short-Term Parking", "Short-Term (hourly) Parking"); // error
+    
+    
+    
+    */
+    onParkingLotPicker.pickLot("Short-Term Parking", "Short-Term Parking");
   });
 
   it("Starting Date Test", () => {
@@ -54,13 +64,13 @@ describe("Friendly_User_Test", () => {
   //   }
 
   // */
-  //   /*ERROR! Enter A Correctly Formatted Date {
+  //   /*ERROR! Enter A Correctly Formatted Date
   //     for this error type the incorrect date format
-  //   }
+  //
   //   */
 
-  //   OnerrMessage.CheckErrMessage(
+  //   OnerrMessage.CheckErrMessage
   //     "ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time"
-  //   );
+  //
   // });
 });
