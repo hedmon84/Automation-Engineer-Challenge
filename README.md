@@ -12,20 +12,20 @@ This project is a challenge for AclkenAvenue
 * No reports automatic available with this npm run 
 
 **npm run cypress:run**
-* will run all tests headlessly in the browser 
-* and will create video, screenshots and automatic reports
+* Will run all tests headlessly in the browser 
+* will create video, screenshots and automatic reports
 
 
 
 
 **Folders to check:**
-* mochawesome-report = This folder has the automatic results you can open on html
-* video= will save the video if you run  npm run cypress:run
-* screenshot= will create screenshot of an error occurred
+* Mochawesome-report = This folder has the automatic results you can open on html
+* Video= will save the video if you run  npm run cypress:run
+* Screenshot= will create screenshot of an error occurred
 
  
 
 
 # Comments
 * Cypres is unable to build/deployment I try with  heroku but is not a clear info how to do it.
-* automated things used on the program prettier,eslint,githubautocommit,mocha,mochaawesomereports
+* Automated things used on the program prettier,eslint,githubautocommit,mocha,mochaawesomereports
