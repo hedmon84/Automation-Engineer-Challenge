@@ -23,7 +23,8 @@ application: ​ http://www.shino.de/parkcalc/
 
 
 **Folders to check:**
-* Mochawesome-report = This folder has the automatic results you can open on html
+
+* Mochawesome-report = This folder has the automatic results you can open on html  if you run  npm run cypress:run
 * Video= will save the video if you run  npm run cypress:run
 * Screenshot= will create screenshot of an error occurred
 
