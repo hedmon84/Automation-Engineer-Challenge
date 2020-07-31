@@ -1,6 +1,6 @@
 
 This repository is for the Acklen Avenue QA recruiting challenge
-#Challenge Description
+# Challenge Description
 This program is to Create a automated tests to demonstrate the functionality AND bugs of the following web
 application: ​ http://www.shino.de/parkcalc/
 
