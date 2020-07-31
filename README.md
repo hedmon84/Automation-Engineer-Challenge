@@ -33,5 +33,5 @@ application: ​ http://www.shino.de/parkcalc/
 
 # Comments
 * Cypres is unable to build/deployment I try with  heroku but is not a clear info how to do it.
-* Automated things used on the program prettier,eslint,githubautocommit,mocha,mochaawesomereports
-*  cypess use mocha and chai libraries soo I use chai to make assertions 
+* Automated things used on the program prettier,eslint,githubautocommit,mocha,mochawesomereports
+* Cypess use mocha and chai libraries soo I use chai to make assertions 
