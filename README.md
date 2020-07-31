@@ -11,13 +11,15 @@ application: ​ http://www.shino.de/parkcalc/
 **npm start**
 * Runs the cypress app UI 
 
-
-* The page will pop up and you can check the 2 test  first test all the controls of the webpage and the second is more structured a user friendly for make test.
-* No reports automatic available with this npm run 
+* The program will pop up and  you can see 2 test, the first test is to check, dropdowns, radiobottons,text box, price ande date
+the second test is object oriented using clean code , clean tests and more user friendly. 
 
 **npm run cypress:run**
-* Will run all tests headlessly in the browser 
-* will create video, screenshots and automatic reports
+* Will run all tests  on the terminal
+* Will create videos
+* Will create screenshots if you get a error
+* Will create html test reports
+* will delete previous,reports,screenshots and videos every time you run this script
 
 
 
