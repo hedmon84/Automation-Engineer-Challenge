@@ -1,5 +1,5 @@
 
-This project is a challenge by Acklen Avenue
+This repository is for the Acklen Avenue QA recruiting challenge
 
 # Available Scripts
 * In the project directory, you can run:
