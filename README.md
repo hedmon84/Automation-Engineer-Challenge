@@ -19,7 +19,7 @@ the second test is object oriented using clean code , clean tests and more user 
 * Will test create videos
 * Will create test screenshots if you get a error
 * Will create html test reports
-* will delete previous,reports,screenshots and videos every time you run this script
+* Will delete previous,reports,screenshots and videos every time you run this script
 
 
 
