@@ -43,3 +43,4 @@ the second test is object oriented using clean code , clean tests and more user 
 
 # Web bugs
 * In the radio_botton every time the form is submited the radio_botton reset but not the calendar and the tex_box
+* The drop_downs doesnt have the same name of the parking rate table
