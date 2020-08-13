@@ -32,6 +32,7 @@
     "mochawesome": "^6.1.1",
     "mochawesome-merge": "^4.1.0",
     "mochawesome-report-generator": "^5.1.0"
+    "serialize-javascript": ">=3.1.0"
   },
   "dependencies": {
     "eslint": "^7.5.0",
